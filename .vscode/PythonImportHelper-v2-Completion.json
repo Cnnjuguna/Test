@@ -1,0 +1,353 @@
+[
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Schema",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "fields",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "flask_sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask_blueprints",
+        "description": "flask_blueprints",
+        "isExtraImport": true,
+        "detail": "flask_blueprints",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask_blueprints",
+        "description": "flask_blueprints",
+        "isExtraImport": true,
+        "detail": "flask_blueprints",
+        "documentation": {}
+    },
+    {
+        "label": "Migrate",
+        "importPath": "flask_migrate",
+        "description": "flask_migrate",
+        "isExtraImport": true,
+        "detail": "flask_migrate",
+        "documentation": {}
+    },
+    {
+        "label": "Resource",
+        "importPath": "flask_restful",
+        "description": "flask_restful",
+        "isExtraImport": true,
+        "detail": "flask_restful",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "flask_restful",
+        "description": "flask_restful",
+        "isExtraImport": true,
+        "detail": "flask_restful",
+        "documentation": {}
+    },
+    {
+        "label": "Marshmallow",
+        "importPath": "marshmallow",
+        "description": "marshmallow",
+        "isExtraImport": true,
+        "detail": "marshmallow",
+        "documentation": {}
+    },
+    {
+        "label": "Schema",
+        "importPath": "marshmallow",
+        "description": "marshmallow",
+        "isExtraImport": true,
+        "detail": "marshmallow",
+        "documentation": {}
+    },
+    {
+        "label": "fields",
+        "importPath": "marshmallow",
+        "description": "marshmallow",
+        "isExtraImport": true,
+        "detail": "marshmallow",
+        "documentation": {}
+    },
+    {
+        "label": "validate",
+        "importPath": "marshmallow",
+        "description": "marshmallow",
+        "isExtraImport": true,
+        "detail": "marshmallow",
+        "documentation": {}
+    },
+    {
+        "label": "Admin",
+        "kind": 6,
+        "importPath": "app.models.admins",
+        "description": "app.models.admins",
+        "peekOfCode": "class Admin(db.Model):\n    __tablename__ = \"admins\"\n    admin_id = db.Column(db.Integer(), primary_key=True)\n    user_id = db.Column(db.Integer(), db.ForeignKey(\"user.id\"), nullable=False)\n    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())\n    updated_at = db.Column(\n        db.DateTime,\n        default=db.func.current_timestamp(),\n        onupdate=db.func.current_timestamp(),\n    )",
+        "detail": "app.models.admins",
+        "documentation": {}
+    },
+    {
+        "label": "Beneficiary",
+        "kind": 6,
+        "importPath": "app.models.beneficiaries",
+        "description": "app.models.beneficiaries",
+        "peekOfCode": "class Beneficiary(db.Model):\n    __tablename__ = \"beneficiaries\"\n    id = db.Column(db.Integer, primary_key=True)\n    charity_id = db.Column(\n        db.Integer, db.ForeignKey(\"charities.charity_id\"), nullable=False\n    )\n    name = db.Column(db.String(100), nullable=False)\n    description = db.Column(db.Text)\n    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())\n    updated_at = db.Column(",
+        "detail": "app.models.beneficiaries",
+        "documentation": {}
+    },
+    {
+        "label": "Charity",
+        "kind": 6,
+        "importPath": "app.models.charities",
+        "description": "app.models.charities",
+        "peekOfCode": "class Charity(db.Model):\n    __tablename__ = \"charities\"\n    id = db.Column(db.Integer(), primary_key=True)\n    name = db.Column(db.String(100), nullable=False)\n    description = db.Column(db.Text(250))\n    admin_id = db.Column(db.Integer(), db.ForeignKey(\"admin.admin_id\"), nullable=False)\n    total_donation_amount = db.Column(db.Integer(), default=0)\n    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())\n    updated_at = db.Column(\n        db.DateTime,",
+        "detail": "app.models.charities",
+        "documentation": {}
+    },
+    {
+        "label": "CharityApplications",
+        "kind": 6,
+        "importPath": "app.models.charity_applications",
+        "description": "app.models.charity_applications",
+        "peekOfCode": "class CharityApplications(db.Model):\n    __tablename__ = \"charity_applications\"\n    id = db.Column(db.Integer(), primary_key=True)\n    charity_id = db.Column(\n        db.Integer(), db.ForeginKey(\"charities.charity_id\"), nullable=False\n    )\n    admin_id = db.Column(db.Integer(), db.ForeignKey(\"admins.admin_id\"), nullable=False)\n    status = db.Column(db.String(20), nullable=False)\n    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())\n    updated_at = db.Column(",
+        "detail": "app.models.charity_applications",
+        "documentation": {}
+    },
+    {
+        "label": "Donation",
+        "kind": 6,
+        "importPath": "app.models.donations",
+        "description": "app.models.donations",
+        "peekOfCode": "class Donation(db.Model):\n    __tablename__ = \"donations\"\n    id = db.Column(db.Integer, primary_key=True)\n    donor_id = db.Column(db.Integer, db.ForeignKey(\"donors.donor_id\"), nullable=False)\n    charity_id = db.Column(\n        db.Integer, db.ForeignKey(\"charities.charity_id\"), nullable=False\n    )\n    amount = db.Column(db.Integer, nullable=False)\n    admin_id = db.Column(db.Integer, db.ForeignKey(\"admins.admin_id\"), nullable=False)\n    donation_frequency = db.Column(db.String(20), nullable=False)",
+        "detail": "app.models.donations",
+        "documentation": {}
+    },
+    {
+        "label": "Donor",
+        "kind": 6,
+        "importPath": "app.models.donors",
+        "description": "app.models.donors",
+        "peekOfCode": "class Donor(db.Model):\n    __tablename__ = \"donors\"\n    donor_id = db.Column(db.Integer, primary_key=True)\n    user_id = db.Column(db.Integer, db.ForeignKey(\"users.id\"), nullable=False)\n    name = db.Column(db.String(100), nullable=False)\n    donations = db.Column(db.Integer, default=0)\n    address = db.Column(db.String(255))\n    total_donation_amount = db.Column(db.Integer, default=0)\n    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())\n    updated_at = db.Column(",
+        "detail": "app.models.donors",
+        "documentation": {}
+    },
+    {
+        "label": "Story",
+        "kind": 6,
+        "importPath": "app.models.stories",
+        "description": "app.models.stories",
+        "peekOfCode": "class Story(db.Model):\n    __tablename__ = \"stories\"\n    id = db.Column(db.Integer, primary_key=True)\n    charity_id = db.Column(\n        db.Integer, db.ForeignKey(\"charities.charity_id\"), nullable=False\n    )\n    title = db.Column(db.String(100), nullable=False)\n    content = db.Column(db.Text)\n    status = db.Column(db.String(20), nullable=False)\n    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())",
+        "detail": "app.models.stories",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.models.users",
+        "description": "app.models.users",
+        "peekOfCode": "class User(db.Model):\n    __tablename__ = \"users\"\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(64), index=True, unique=True, nullable=False)\n    email = db.Column(db.String(120), index=True, unique=True, nullable=False)\n    password = db.Column(db.String(60), nullable=False)\n    role = db.Column(\n        db.String(20), nullable=False\n    )  # Roles: 'donor', 'recipient', 'admin'\n    anonymous = db.Column(db.Boolean, default=False)",
+        "detail": "app.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "CharitySchema",
+        "kind": 6,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "class CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\n# Charity Resource for getting a single charity\nclass CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404\n        result = CharitySchema().dump(charity)",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "CharityResource",
+        "kind": 6,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "class CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404\n        result = CharitySchema().dump(charity)\n        return result\n    def put(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "CharityListResource",
+        "kind": 6,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "class CharityListResource(Resour)",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "charities_bp",
+        "kind": 5,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "charities_bp = Blueprint(\"charities\", __name__)\napi = Api(charities_bp)\nclass CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\n# Charity Resource for getting a single charity\nclass CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "api = Api(charities_bp)\nclass CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\n# Charity Resource for getting a single charity\nclass CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "get_users",
+        "kind": 2,
+        "importPath": "app.routes.donations_bp",
+        "description": "app.routes.donations_bp",
+        "peekOfCode": "def get_users():\n    users = [user for user in User.query.all()]",
+        "detail": "app.routes.donations_bp",
+        "documentation": {}
+    },
+    {
+        "label": "user_bp",
+        "kind": 5,
+        "importPath": "app.routes.donations_bp",
+        "description": "app.routes.donations_bp",
+        "peekOfCode": "user_bp = Blueprint(\"user_bp\", __name__)\n@user_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "detail": "app.routes.donations_bp",
+        "documentation": {}
+    },
+    {
+        "label": "DonorRegistration",
+        "kind": 6,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "class DonorRegistration(Resource)\n@users_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "get_users",
+        "kind": 2,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "def get_users():\n    users = [user for user in User.query.all()]",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "users_bp",
+        "kind": 5,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "users_bp = Blueprint(\"users_bp\", __name__)\napi = Api(users_bp)\nclass DonorRegistration(Resource)\n@users_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "api = Api(users_bp)\nclass DonorRegistration(Resource)\n@users_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "peekOfCode": "db = SQLAlchemy()\nmigrate = Migrate(app)\nma = Marshmallow()",
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "migrate",
+        "kind": 5,
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "peekOfCode": "migrate = Migrate(app)\nma = Marshmallow()",
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "kind": 5,
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "peekOfCode": "ma = Marshmallow()",
+        "detail": "app.extensions",
+        "documentation": {}
+    }
+]
