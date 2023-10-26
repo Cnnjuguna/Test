@@ -13,5 +13,5 @@ bcrypt = Bcrypt()
 
 
 db = SQLAlchemy()
-migrate = Migrate(app)
+migrate = Migrate()
 ma = Marshmallow()

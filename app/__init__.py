@@ -3,9 +3,6 @@ from flask import Flask
 from .extensions import db, migrate
 from .extensions import login_manager, bcrypt
 
-login_manager.init_app(app)
-bcrypt.init_app(app)
-
 
 def create_app():
     app = Flask(__name__)
@@ -14,6 +11,8 @@ def create_app():
 
     db.init_app(app)
     migrate.init_app(app, db)
+    login_manager.init_app(app)
+    bcrypt.init_app(app)
 
     from app.routes import user_bp, donation_bp, admin_bp
 

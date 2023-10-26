@@ -935,7 +935,7 @@
         "kind": 5,
         "importPath": "app.extensions",
         "description": "app.extensions",
-        "peekOfCode": "login_manager = LoginManager()\nbcrypt = Bcrypt()\ndb = SQLAlchemy()\nmigrate = Migrate(app)\nma = Marshmallow()",
+        "peekOfCode": "login_manager = LoginManager()\nbcrypt = Bcrypt()\ndb = SQLAlchemy()\nmigrate = Migrate()\nma = Marshmallow()",
         "detail": "app.extensions",
         "documentation": {}
     },
@@ -944,7 +944,7 @@
         "kind": 5,
         "importPath": "app.extensions",
         "description": "app.extensions",
-        "peekOfCode": "bcrypt = Bcrypt()\ndb = SQLAlchemy()\nmigrate = Migrate(app)\nma = Marshmallow()",
+        "peekOfCode": "bcrypt = Bcrypt()\ndb = SQLAlchemy()\nmigrate = Migrate()\nma = Marshmallow()",
         "detail": "app.extensions",
         "documentation": {}
     },
@@ -953,7 +953,7 @@
         "kind": 5,
         "importPath": "app.extensions",
         "description": "app.extensions",
-        "peekOfCode": "db = SQLAlchemy()\nmigrate = Migrate(app)\nma = Marshmallow()",
+        "peekOfCode": "db = SQLAlchemy()\nmigrate = Migrate()\nma = Marshmallow()",
         "detail": "app.extensions",
         "documentation": {}
     },
@@ -962,7 +962,7 @@
         "kind": 5,
         "importPath": "app.extensions",
         "description": "app.extensions",
-        "peekOfCode": "migrate = Migrate(app)\nma = Marshmallow()",
+        "peekOfCode": "migrate = Migrate()\nma = Marshmallow()",
         "detail": "app.extensions",
         "documentation": {}
     },
