@@ -1,58 +1,154 @@
 [
     {
-        "label": "Blueprint",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "charities_applications_schema",
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
         "isExtraImport": true,
-        "detail": "flask",
+        "detail": "app.routes.charity_applications_bp",
         "documentation": {}
     },
     {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "Admin",
+        "importPath": "models.admins",
+        "description": "models.admins",
         "isExtraImport": true,
-        "detail": "flask",
+        "detail": "models.admins",
         "documentation": {}
     },
     {
-        "label": "jsonify",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "Charity",
+        "importPath": "models.charities",
+        "description": "models.charities",
         "isExtraImport": true,
-        "detail": "flask",
+        "detail": "models.charities",
         "documentation": {}
     },
     {
-        "label": "Schema",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "CharityApplications",
+        "importPath": "models.charity_applications",
+        "description": "models.charity_applications",
         "isExtraImport": true,
-        "detail": "flask",
+        "detail": "models.charity_applications",
         "documentation": {}
     },
     {
-        "label": "fields",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "db",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
         "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "Api",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
+        "detail": "app.extensions",
         "documentation": {}
     },
     {
         "label": "ma",
-        "importPath": "flask",
-        "description": "flask",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
         "isExtraImport": true,
-        "detail": "flask",
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "Resource",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "Resource",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "Api",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "isExtraImport": true,
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "Beneficiary",
+        "importPath": "models.beneficiaries",
+        "description": "models.beneficiaries",
+        "isExtraImport": true,
+        "detail": "models.beneficiaries",
+        "documentation": {}
+    },
+    {
+        "label": "Beneficiary",
+        "importPath": "app.models.beneficiaries",
+        "description": "app.models.beneficiaries",
+        "isExtraImport": true,
+        "detail": "app.models.beneficiaries",
+        "documentation": {}
+    },
+    {
+        "label": "beneficiaries_schema",
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "isExtraImport": true,
+        "detail": "app.routes.beneficiaries_bp",
         "documentation": {}
     },
     {
@@ -81,6 +177,22 @@
         "documentation": {}
     },
     {
+        "label": "CharityApplications",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Donation",
+        "importPath": "models.donations",
+        "description": "models.donations",
+        "isExtraImport": true,
+        "detail": "models.donations",
+        "documentation": {}
+    },
+    {
         "label": "Blueprint",
         "importPath": "flask_blueprints",
         "description": "flask_blueprints",
@@ -94,6 +206,22 @@
         "description": "flask_blueprints",
         "isExtraImport": true,
         "detail": "flask_blueprints",
+        "documentation": {}
+    },
+    {
+        "label": "Donor",
+        "importPath": "models.donors",
+        "description": "models.donors",
+        "isExtraImport": true,
+        "detail": "models.donors",
+        "documentation": {}
+    },
+    {
+        "label": "Story",
+        "importPath": "models.stories",
+        "description": "models.stories",
+        "isExtraImport": true,
+        "detail": "models.stories",
         "documentation": {}
     },
     {
@@ -150,6 +278,54 @@
         "description": "marshmallow",
         "isExtraImport": true,
         "detail": "marshmallow",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "wraps",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "LoginManager",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "Bcrypt",
+        "importPath": "flask_bcrypt",
+        "description": "flask_bcrypt",
+        "isExtraImport": true,
+        "detail": "flask_bcrypt",
         "documentation": {}
     },
     {
@@ -225,11 +401,119 @@
         "documentation": {}
     },
     {
+        "label": "PendingCharityApplicationsResource",
+        "kind": 6,
+        "importPath": "app.routes.admin_bp",
+        "description": "app.routes.admin_bp",
+        "peekOfCode": "class PendingCharityApplicationsResource(Resource):\n    def get(self):\n        pending_applications = CharityApplications.query.filter_by(\n            status=\"pending\"\n        ).all()\n        result = charities_applications_schema(many=True).dump(pending_applications)\n        return result\n# Resource for approving or rejecting a charity application\nclass ApproveRejectCharityApplicationResource(Resource):\n    def put(self, application_id):",
+        "detail": "app.routes.admin_bp",
+        "documentation": {}
+    },
+    {
+        "label": "ApproveRejectCharityApplicationResource",
+        "kind": 6,
+        "importPath": "app.routes.admin_bp",
+        "description": "app.routes.admin_bp",
+        "peekOfCode": "class ApproveRejectCharityApplicationResource(Resource):\n    def put(self, application_id):\n        application = CharityApplications.query.get(application_id)\n        if not application:\n            return {\"message\": \"Charity application not found\"}, 404\n        data = request.get_json()\n        status = data.get(\"status\")\n        if status not in (\"approved\", \"rejected\"):\n            return {\"message\": \"Invalid status value\"}, 400\n        application.status = status",
+        "detail": "app.routes.admin_bp",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteCharityResource",
+        "kind": 6,
+        "importPath": "app.routes.admin_bp",
+        "description": "app.routes.admin_bp",
+        "peekOfCode": "class DeleteCharityResource(Resource):\n    def delete(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404\n        db.session.delete(charity)\n        db.session.commit()\n        return {\"message\": \"Charity deleted successfully\"}\n# Adding resources to the API\napi.add_resource(PendingCharityApplicationsResource, \"/admins/pending_applications\")",
+        "detail": "app.routes.admin_bp",
+        "documentation": {}
+    },
+    {
+        "label": "admin_bp",
+        "kind": 5,
+        "importPath": "app.routes.admin_bp",
+        "description": "app.routes.admin_bp",
+        "peekOfCode": "admin_bp = Blueprint(\"admins\", __name__)\napi = Api(admin_bp)\n# ...\n# Resource for viewing pending charity applications\nclass PendingCharityApplicationsResource(Resource):\n    def get(self):\n        pending_applications = CharityApplications.query.filter_by(\n            status=\"pending\"\n        ).all()\n        result = charities_applications_schema(many=True).dump(pending_applications)",
+        "detail": "app.routes.admin_bp",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.admin_bp",
+        "description": "app.routes.admin_bp",
+        "peekOfCode": "api = Api(admin_bp)\n# ...\n# Resource for viewing pending charity applications\nclass PendingCharityApplicationsResource(Resource):\n    def get(self):\n        pending_applications = CharityApplications.query.filter_by(\n            status=\"pending\"\n        ).all()\n        result = charities_applications_schema(many=True).dump(pending_applications)\n        return result",
+        "detail": "app.routes.admin_bp",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficiarySchema",
+        "kind": 6,
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "peekOfCode": "class BeneficiarySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Beneficiary\nbeneficiary_schema = BeneficiarySchema()\nbeneficiaries_schema = BeneficiarySchema(many=True)\n# Beneficiary resource for getting a single beneficiary\nclass BeneficiaryResource(Resource):\n    def get(self, beneficiary_id):\n        beneficiary = Beneficiary.query.get(beneficiary_id)\n        if not beneficiary:",
+        "detail": "app.routes.beneficiaries_bp",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficiaryResource",
+        "kind": 6,
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "peekOfCode": "class BeneficiaryResource(Resource):\n    def get(self, beneficiary_id):\n        beneficiary = Beneficiary.query.get(beneficiary_id)\n        if not beneficiary:\n            return {\"message\": \"Beneficiary not found\"}, 404\n        result = beneficiary_schema.dump(beneficiary)\n        return result\n    # PUT operation to update a beneficiary\n    def put(self, beneficiary_id):\n        beneficiary = Beneficiary.query.get(beneficiary_id)",
+        "detail": "app.routes.beneficiaries_bp",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficiaryListResource",
+        "kind": 6,
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "peekOfCode": "class BeneficiaryListResource(Resource):\n    def get(self):\n        beneficiaries = Beneficiary.query.all()\n        result = beneficiaries_schema.dump(beneficiaries)\n        return result\n    def post(self):\n        data = request.get_json()\n        beneficiary = beneficiary_schema.load(data)\n        db.session.add(beneficiary)\n        db.session.commit()",
+        "detail": "app.routes.beneficiaries_bp",
+        "documentation": {}
+    },
+    {
+        "label": "beneficiaries_bp",
+        "kind": 5,
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "peekOfCode": "beneficiaries_bp = Blueprint(\"beneficiaries_bp\", __name__)\napi = Api(beneficiaries_bp)\n# Schema for Beneficiary serialization\nclass BeneficiarySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Beneficiary\nbeneficiary_schema = BeneficiarySchema()\nbeneficiaries_schema = BeneficiarySchema(many=True)\n# Beneficiary resource for getting a single beneficiary\nclass BeneficiaryResource(Resource):",
+        "detail": "app.routes.beneficiaries_bp",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "peekOfCode": "api = Api(beneficiaries_bp)\n# Schema for Beneficiary serialization\nclass BeneficiarySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Beneficiary\nbeneficiary_schema = BeneficiarySchema()\nbeneficiaries_schema = BeneficiarySchema(many=True)\n# Beneficiary resource for getting a single beneficiary\nclass BeneficiaryResource(Resource):\n    def get(self, beneficiary_id):",
+        "detail": "app.routes.beneficiaries_bp",
+        "documentation": {}
+    },
+    {
+        "label": "beneficiary_schema",
+        "kind": 5,
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "peekOfCode": "beneficiary_schema = BeneficiarySchema()\nbeneficiaries_schema = BeneficiarySchema(many=True)\n# Beneficiary resource for getting a single beneficiary\nclass BeneficiaryResource(Resource):\n    def get(self, beneficiary_id):\n        beneficiary = Beneficiary.query.get(beneficiary_id)\n        if not beneficiary:\n            return {\"message\": \"Beneficiary not found\"}, 404\n        result = beneficiary_schema.dump(beneficiary)\n        return result",
+        "detail": "app.routes.beneficiaries_bp",
+        "documentation": {}
+    },
+    {
+        "label": "beneficiaries_schema",
+        "kind": 5,
+        "importPath": "app.routes.beneficiaries_bp",
+        "description": "app.routes.beneficiaries_bp",
+        "peekOfCode": "beneficiaries_schema = BeneficiarySchema(many=True)\n# Beneficiary resource for getting a single beneficiary\nclass BeneficiaryResource(Resource):\n    def get(self, beneficiary_id):\n        beneficiary = Beneficiary.query.get(beneficiary_id)\n        if not beneficiary:\n            return {\"message\": \"Beneficiary not found\"}, 404\n        result = beneficiary_schema.dump(beneficiary)\n        return result\n    # PUT operation to update a beneficiary",
+        "detail": "app.routes.beneficiaries_bp",
+        "documentation": {}
+    },
+    {
         "label": "CharitySchema",
         "kind": 6,
         "importPath": "app.routes.charities_bp",
         "description": "app.routes.charities_bp",
-        "peekOfCode": "class CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\n# Charity Resource for getting a single charity\nclass CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404\n        result = CharitySchema().dump(charity)",
+        "peekOfCode": "class CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\ncharity_schema = CharitySchema()\ncharities_schema = CharitySchema(many=True)\n# Authentication Decorator\ndef auth_required(func):\n    @wraps(func)\n    def decorated_function(*args, **kwargs):\n        if not user_is_authenticated():",
         "detail": "app.routes.charities_bp",
         "documentation": {}
     },
@@ -238,7 +522,7 @@
         "kind": 6,
         "importPath": "app.routes.charities_bp",
         "description": "app.routes.charities_bp",
-        "peekOfCode": "class CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404\n        result = CharitySchema().dump(charity)\n        return result\n    def put(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:",
+        "peekOfCode": "class CharityResource(ma.SQLAlchemyAutoSchema):\n    method_decorators = [auth_required]\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404\n        result = charity_schema.dump(charity)\n        return result\n    def put(self, charity_id):\n        charity = Charity.query.get(charity_id)",
         "detail": "app.routes.charities_bp",
         "documentation": {}
     },
@@ -247,7 +531,34 @@
         "kind": 6,
         "importPath": "app.routes.charities_bp",
         "description": "app.routes.charities_bp",
-        "peekOfCode": "class CharityListResource(Resour)",
+        "peekOfCode": "class CharityListResource(Resource):\n    def get(self):\n        charities = Charity.query.all()\n        result = charities_schema.dump(charities)\n        return result\n    def post(self):\n        data = request.get_json()\n        charity_schema = CharitySchema()\n        charity = charity_schema.load(data)\n        db.session.add(charity)",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficiariesResources",
+        "kind": 6,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "class BeneficiariesResources(Resource):\n    method_decorators = [auth_required]\n    def get(self):\n        beneficiaries = Beneficiary.query.filter_by(charity_id=g.user.charity.id).all()\n        result = beneficiaries_schema(many=True).dump(beneficiaries)\n        return result\n# Resource for a charity to maintain inventory sent to the beneficiaries\nclass InventoryResource(Resource):\n    method_decorators = [auth_required]  # Requires authentication as a charity\n    def post(self):",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "InventoryResource",
+        "kind": 6,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "class InventoryResource(Resource):\n    method_decorators = [auth_required]  # Requires authentication as a charity\n    def post(self):\n        data = request.get_json()\n        # Process and store inventory data\n        return {\"message\": \"Inventory data saved successfully\"}\n# Add resources to the API\napi.add_resource(CharityListResource, \"/charities\")\napi.add_resource(CharityResource, \"/charities/<int:charity_id>\")",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "auth_required",
+        "kind": 2,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "def auth_required(func):\n    @wraps(func)\n    def decorated_function(*args, **kwargs):\n        if not user_is_authenticated():\n            return jsonify({\"message\": \"Authentication required\"}), 401\n        return func(*args, **kwargs)\n    return decorated_function\n# Charity Resource for getting a single charity\nclass CharityResource(ma.SQLAlchemyAutoSchema):\n    method_decorators = [auth_required]",
         "detail": "app.routes.charities_bp",
         "documentation": {}
     },
@@ -256,7 +567,7 @@
         "kind": 5,
         "importPath": "app.routes.charities_bp",
         "description": "app.routes.charities_bp",
-        "peekOfCode": "charities_bp = Blueprint(\"charities\", __name__)\napi = Api(charities_bp)\nclass CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\n# Charity Resource for getting a single charity\nclass CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:",
+        "peekOfCode": "charities_bp = Blueprint(\"charities\", __name__)\napi = Api(charities_bp)\nclass CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\ncharity_schema = CharitySchema()\ncharities_schema = CharitySchema(many=True)\n# Authentication Decorator\ndef auth_required(func):\n    @wraps(func)",
         "detail": "app.routes.charities_bp",
         "documentation": {}
     },
@@ -265,43 +576,304 @@
         "kind": 5,
         "importPath": "app.routes.charities_bp",
         "description": "app.routes.charities_bp",
-        "peekOfCode": "api = Api(charities_bp)\nclass CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\n# Charity Resource for getting a single charity\nclass CharityResource(ma.SQLAlchemyAutoSchema):\n    def get(self, charity_id):\n        charity = Charity.query.get(charity_id)\n        if not charity:\n            return {\"message\": \"Charity not found\"}, 404",
+        "peekOfCode": "api = Api(charities_bp)\nclass CharitySchema(ma.Schema):\n    class Meta:\n        model = Charity\ncharity_schema = CharitySchema()\ncharities_schema = CharitySchema(many=True)\n# Authentication Decorator\ndef auth_required(func):\n    @wraps(func)\n    def decorated_function(*args, **kwargs):",
         "detail": "app.routes.charities_bp",
         "documentation": {}
     },
     {
-        "label": "get_users",
-        "kind": 2,
+        "label": "charity_schema",
+        "kind": 5,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "charity_schema = CharitySchema()\ncharities_schema = CharitySchema(many=True)\n# Authentication Decorator\ndef auth_required(func):\n    @wraps(func)\n    def decorated_function(*args, **kwargs):\n        if not user_is_authenticated():\n            return jsonify({\"message\": \"Authentication required\"}), 401\n        return func(*args, **kwargs)\n    return decorated_function",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "charities_schema",
+        "kind": 5,
+        "importPath": "app.routes.charities_bp",
+        "description": "app.routes.charities_bp",
+        "peekOfCode": "charities_schema = CharitySchema(many=True)\n# Authentication Decorator\ndef auth_required(func):\n    @wraps(func)\n    def decorated_function(*args, **kwargs):\n        if not user_is_authenticated():\n            return jsonify({\"message\": \"Authentication required\"}), 401\n        return func(*args, **kwargs)\n    return decorated_function\n# Charity Resource for getting a single charity",
+        "detail": "app.routes.charities_bp",
+        "documentation": {}
+    },
+    {
+        "label": "CharityApplicationsSchema",
+        "kind": 6,
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
+        "peekOfCode": "class CharityApplicationsSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = CharityApplications\ncharity_application_schema = CharityApplicationsSchema()\ncharities_applications_schema = CharityApplicationsSchema(many=True)\n# CharityApplication resource for getting a single application\nclass CharityApplicationResource(Resource):\n    def get(self, application_id):\n        application = CharityApplications.query.get(application_id)\n        if not application:",
+        "detail": "app.routes.charity_applications_bp",
+        "documentation": {}
+    },
+    {
+        "label": "CharityApplicationResource",
+        "kind": 6,
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
+        "peekOfCode": "class CharityApplicationResource(Resource):\n    def get(self, application_id):\n        application = CharityApplications.query.get(application_id)\n        if not application:\n            return {\"message\": \"Application not found\"}, 404\n        result = charity_application_schema.dump(application)\n        return result\n    def put(self, application_id):\n        application = CharityApplications.query.get(application_id)\n        if not application:",
+        "detail": "app.routes.charity_applications_bp",
+        "documentation": {}
+    },
+    {
+        "label": "CharityApplicationListResource",
+        "kind": 6,
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
+        "peekOfCode": "class CharityApplicationListResource(Resource):\n    def get(self):\n        applications = [application for application in CharityApplications.query.all()]\n        result = charities_applications_schema.dump(applications)\n        return result\n    def post(self):\n        data = request.get_json()\n        application = charity_application_schema.load(data)\n        db.session.add(application)\n        db.session.commit()",
+        "detail": "app.routes.charity_applications_bp",
+        "documentation": {}
+    },
+    {
+        "label": "charity_applications_bp",
+        "kind": 5,
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
+        "peekOfCode": "charity_applications_bp = Blueprint(\"charity_applications\", __name__)\napi = Api(charity_applications_bp)\n# Schema for CharityApplications serialization\nclass CharityApplicationsSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = CharityApplications\ncharity_application_schema = CharityApplicationsSchema()\ncharities_applications_schema = CharityApplicationsSchema(many=True)\n# CharityApplication resource for getting a single application\nclass CharityApplicationResource(Resource):",
+        "detail": "app.routes.charity_applications_bp",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
+        "peekOfCode": "api = Api(charity_applications_bp)\n# Schema for CharityApplications serialization\nclass CharityApplicationsSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = CharityApplications\ncharity_application_schema = CharityApplicationsSchema()\ncharities_applications_schema = CharityApplicationsSchema(many=True)\n# CharityApplication resource for getting a single application\nclass CharityApplicationResource(Resource):\n    def get(self, application_id):",
+        "detail": "app.routes.charity_applications_bp",
+        "documentation": {}
+    },
+    {
+        "label": "charity_application_schema",
+        "kind": 5,
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
+        "peekOfCode": "charity_application_schema = CharityApplicationsSchema()\ncharities_applications_schema = CharityApplicationsSchema(many=True)\n# CharityApplication resource for getting a single application\nclass CharityApplicationResource(Resource):\n    def get(self, application_id):\n        application = CharityApplications.query.get(application_id)\n        if not application:\n            return {\"message\": \"Application not found\"}, 404\n        result = charity_application_schema.dump(application)\n        return result",
+        "detail": "app.routes.charity_applications_bp",
+        "documentation": {}
+    },
+    {
+        "label": "charities_applications_schema",
+        "kind": 5,
+        "importPath": "app.routes.charity_applications_bp",
+        "description": "app.routes.charity_applications_bp",
+        "peekOfCode": "charities_applications_schema = CharityApplicationsSchema(many=True)\n# CharityApplication resource for getting a single application\nclass CharityApplicationResource(Resource):\n    def get(self, application_id):\n        application = CharityApplications.query.get(application_id)\n        if not application:\n            return {\"message\": \"Application not found\"}, 404\n        result = charity_application_schema.dump(application)\n        return result\n    def put(self, application_id):",
+        "detail": "app.routes.charity_applications_bp",
+        "documentation": {}
+    },
+    {
+        "label": "DonationSchema",
+        "kind": 6,
         "importPath": "app.routes.donations_bp",
         "description": "app.routes.donations_bp",
-        "peekOfCode": "def get_users():\n    users = [user for user in User.query.all()]",
+        "peekOfCode": "class DonationSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Donation\ndonation_schema = DonationSchema()\ndonations_schema = DonationSchema(many=True)\n# Donation resource for getting a single donation\nclass DonationResource(Resource):\n    def get(self, donation_id):\n        donation = Donation.query.get(donation_id)\n        if not donation:",
         "detail": "app.routes.donations_bp",
         "documentation": {}
     },
     {
-        "label": "user_bp",
+        "label": "DonationResource",
+        "kind": 6,
+        "importPath": "app.routes.donations_bp",
+        "description": "app.routes.donations_bp",
+        "peekOfCode": "class DonationResource(Resource):\n    def get(self, donation_id):\n        donation = Donation.query.get(donation_id)\n        if not donation:\n            return {\"message\": \"Donation not found\"}, 404\n        result = donation_schema.dump(donation)\n        return result\n    # PUT operation to update a donation\n    def put(self, donation_id):\n        donation = Donation.query.get(donation_id)",
+        "detail": "app.routes.donations_bp",
+        "documentation": {}
+    },
+    {
+        "label": "DonationListResource",
+        "kind": 6,
+        "importPath": "app.routes.donations_bp",
+        "description": "app.routes.donations_bp",
+        "peekOfCode": "class DonationListResource(Resource):\n    def get(self):\n        donations = Donation.query.all()\n        result = donations_schema.dump(donations)\n        return result\n    def post(self):\n        data = request.get_json()\n        donation = donation_schema.load(data)\n        db.session.add(donation)\n        db.session.commit()",
+        "detail": "app.routes.donations_bp",
+        "documentation": {}
+    },
+    {
+        "label": "donations_bp",
         "kind": 5,
         "importPath": "app.routes.donations_bp",
         "description": "app.routes.donations_bp",
-        "peekOfCode": "user_bp = Blueprint(\"user_bp\", __name__)\n@user_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "peekOfCode": "donations_bp = Blueprint(\"donations_bp\", __name__)\napi = Api(donations_bp)\n# Schema for Donation serialization\nclass DonationSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Donation\ndonation_schema = DonationSchema()\ndonations_schema = DonationSchema(many=True)\n# Donation resource for getting a single donation\nclass DonationResource(Resource):",
         "detail": "app.routes.donations_bp",
         "documentation": {}
     },
     {
-        "label": "DonorRegistration",
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.donations_bp",
+        "description": "app.routes.donations_bp",
+        "peekOfCode": "api = Api(donations_bp)\n# Schema for Donation serialization\nclass DonationSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Donation\ndonation_schema = DonationSchema()\ndonations_schema = DonationSchema(many=True)\n# Donation resource for getting a single donation\nclass DonationResource(Resource):\n    def get(self, donation_id):",
+        "detail": "app.routes.donations_bp",
+        "documentation": {}
+    },
+    {
+        "label": "donation_schema",
+        "kind": 5,
+        "importPath": "app.routes.donations_bp",
+        "description": "app.routes.donations_bp",
+        "peekOfCode": "donation_schema = DonationSchema()\ndonations_schema = DonationSchema(many=True)\n# Donation resource for getting a single donation\nclass DonationResource(Resource):\n    def get(self, donation_id):\n        donation = Donation.query.get(donation_id)\n        if not donation:\n            return {\"message\": \"Donation not found\"}, 404\n        result = donation_schema.dump(donation)\n        return result",
+        "detail": "app.routes.donations_bp",
+        "documentation": {}
+    },
+    {
+        "label": "donations_schema",
+        "kind": 5,
+        "importPath": "app.routes.donations_bp",
+        "description": "app.routes.donations_bp",
+        "peekOfCode": "donations_schema = DonationSchema(many=True)\n# Donation resource for getting a single donation\nclass DonationResource(Resource):\n    def get(self, donation_id):\n        donation = Donation.query.get(donation_id)\n        if not donation:\n            return {\"message\": \"Donation not found\"}, 404\n        result = donation_schema.dump(donation)\n        return result\n    # PUT operation to update a donation",
+        "detail": "app.routes.donations_bp",
+        "documentation": {}
+    },
+    {
+        "label": "DonorSchema",
+        "kind": 6,
+        "importPath": "app.routes.donors_bp",
+        "description": "app.routes.donors_bp",
+        "peekOfCode": "class DonorSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Donor\ndonor_schema = DonorSchema()\ndonors_schema = DonorSchema(many=True)\n# Donor resource for getting a single donor\nclass DonorResource(Resource):\n    def get(self, donor_id):\n        donor = Donor.query.get(donor_id)\n        if not donor:",
+        "detail": "app.routes.donors_bp",
+        "documentation": {}
+    },
+    {
+        "label": "DonorResource",
+        "kind": 6,
+        "importPath": "app.routes.donors_bp",
+        "description": "app.routes.donors_bp",
+        "peekOfCode": "class DonorResource(Resource):\n    def get(self, donor_id):\n        donor = Donor.query.get(donor_id)\n        if not donor:\n            return {\"message\": \"Donor not found\"}, 404\n        result = donor_schema.dump(donor)\n        return result\n    # PUT operation to update a donor\n    def put(self, donor_id):\n        donor = Donor.query.get(donor_id)",
+        "detail": "app.routes.donors_bp",
+        "documentation": {}
+    },
+    {
+        "label": "DonorListResource",
+        "kind": 6,
+        "importPath": "app.routes.donors_bp",
+        "description": "app.routes.donors_bp",
+        "peekOfCode": "class DonorListResource(Resource):\n    def get(self):\n        donors = Donor.query.all()\n        result = donors_schema.dump(donors)\n        return result\n    def post(self):\n        data = request.get_json()\n        donor = donor_schema.load(data)\n        db.session.add(donor)\n        db.session.commit()",
+        "detail": "app.routes.donors_bp",
+        "documentation": {}
+    },
+    {
+        "label": "donors_bp",
+        "kind": 5,
+        "importPath": "app.routes.donors_bp",
+        "description": "app.routes.donors_bp",
+        "peekOfCode": "donors_bp = Blueprint(\"donors_bp\", __name__)\napi = Api(donors_bp)\n# Create a schema for Donor serialization\nclass DonorSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Donor\ndonor_schema = DonorSchema()\ndonors_schema = DonorSchema(many=True)\n# Donor resource for getting a single donor\nclass DonorResource(Resource):",
+        "detail": "app.routes.donors_bp",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.donors_bp",
+        "description": "app.routes.donors_bp",
+        "peekOfCode": "api = Api(donors_bp)\n# Create a schema for Donor serialization\nclass DonorSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Donor\ndonor_schema = DonorSchema()\ndonors_schema = DonorSchema(many=True)\n# Donor resource for getting a single donor\nclass DonorResource(Resource):\n    def get(self, donor_id):",
+        "detail": "app.routes.donors_bp",
+        "documentation": {}
+    },
+    {
+        "label": "donor_schema",
+        "kind": 5,
+        "importPath": "app.routes.donors_bp",
+        "description": "app.routes.donors_bp",
+        "peekOfCode": "donor_schema = DonorSchema()\ndonors_schema = DonorSchema(many=True)\n# Donor resource for getting a single donor\nclass DonorResource(Resource):\n    def get(self, donor_id):\n        donor = Donor.query.get(donor_id)\n        if not donor:\n            return {\"message\": \"Donor not found\"}, 404\n        result = donor_schema.dump(donor)\n        return result",
+        "detail": "app.routes.donors_bp",
+        "documentation": {}
+    },
+    {
+        "label": "donors_schema",
+        "kind": 5,
+        "importPath": "app.routes.donors_bp",
+        "description": "app.routes.donors_bp",
+        "peekOfCode": "donors_schema = DonorSchema(many=True)\n# Donor resource for getting a single donor\nclass DonorResource(Resource):\n    def get(self, donor_id):\n        donor = Donor.query.get(donor_id)\n        if not donor:\n            return {\"message\": \"Donor not found\"}, 404\n        result = donor_schema.dump(donor)\n        return result\n    # PUT operation to update a donor",
+        "detail": "app.routes.donors_bp",
+        "documentation": {}
+    },
+    {
+        "label": "StorySchema",
+        "kind": 6,
+        "importPath": "app.routes.stories_bp",
+        "description": "app.routes.stories_bp",
+        "peekOfCode": "class StorySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Story\n# Story resource for getting a single story\nclass StoryResource(Resource):\n    def get(self, story_id):\n        story = Story.query.get(story_id)\n        if not story:\n            return {\"message\": \"Story not found\"}, 404\n        result = StorySchema().dump(story)",
+        "detail": "app.routes.stories_bp",
+        "documentation": {}
+    },
+    {
+        "label": "StoryResource",
+        "kind": 6,
+        "importPath": "app.routes.stories_bp",
+        "description": "app.routes.stories_bp",
+        "peekOfCode": "class StoryResource(Resource):\n    def get(self, story_id):\n        story = Story.query.get(story_id)\n        if not story:\n            return {\"message\": \"Story not found\"}, 404\n        result = StorySchema().dump(story)\n        return result\n    # PUT operation to update a story\n    def put(self, story_id):\n        story = Story.query.get(story_id)",
+        "detail": "app.routes.stories_bp",
+        "documentation": {}
+    },
+    {
+        "label": "StoryListResource",
+        "kind": 6,
+        "importPath": "app.routes.stories_bp",
+        "description": "app.routes.stories_bp",
+        "peekOfCode": "class StoryListResource(Resource):\n    def get(self):\n        stories = Story.query.all()\n        result = StorySchema(many=True).dump(stories)\n        return result\n    def post(self):\n        data = request.get_json()\n        story_schema = StorySchema()\n        story = story_schema.load(data)\n        db.session.add(story)",
+        "detail": "app.routes.stories_bp",
+        "documentation": {}
+    },
+    {
+        "label": "stories_bp",
+        "kind": 5,
+        "importPath": "app.routes.stories_bp",
+        "description": "app.routes.stories_bp",
+        "peekOfCode": "stories_bp = Blueprint(\"stories_bp\", __name__)\napi = Api(stories_bp)\n# schema for Story serialization\nclass StorySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Story\n# Story resource for getting a single story\nclass StoryResource(Resource):\n    def get(self, story_id):\n        story = Story.query.get(story_id)",
+        "detail": "app.routes.stories_bp",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "app.routes.stories_bp",
+        "description": "app.routes.stories_bp",
+        "peekOfCode": "api = Api(stories_bp)\n# schema for Story serialization\nclass StorySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Story\n# Story resource for getting a single story\nclass StoryResource(Resource):\n    def get(self, story_id):\n        story = Story.query.get(story_id)\n        if not story:",
+        "detail": "app.routes.stories_bp",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
         "kind": 6,
         "importPath": "app.routes.users_bp",
         "description": "app.routes.users_bp",
-        "peekOfCode": "class DonorRegistration(Resource)\n@users_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "peekOfCode": "class UserSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = User\nuser_schema = UserSchema()\nusers_schema = UserSchema(many=True)\n# User resource for getting a single user\nclass UserResource(Resource):\n    def get(self, user_id):\n        user = User.query.get(user_id)\n        if not user:",
         "detail": "app.routes.users_bp",
         "documentation": {}
     },
     {
-        "label": "get_users",
-        "kind": 2,
+        "label": "UserResource",
+        "kind": 6,
         "importPath": "app.routes.users_bp",
         "description": "app.routes.users_bp",
-        "peekOfCode": "def get_users():\n    users = [user for user in User.query.all()]",
+        "peekOfCode": "class UserResource(Resource):\n    def get(self, user_id):\n        user = User.query.get(user_id)\n        if not user:\n            return {\"message\": \"User not found\"}, 404\n        result = user_schema.dump(user)\n        return result\n    def put(self, user_id):\n        user = User.query.get(user_id)\n        if not user:",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "UserListResource",
+        "kind": 6,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "class UserListResource(Resource):\n    def get(self):\n        users = [user for user in User.query.all()]\n        result = user_schema.dump(users)\n        return result\n    def post(self):\n        data = request.get_json()\n        password = data[\"password\"]\n        hashed_password = bcrypt.generate_password_hash(password).decode(\"utf-8\")\n        user = User(",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "LoginResource",
+        "kind": 6,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "class LoginResource(Resource):\n    def post(self):\n        data = request.get_json()\n        user = User.query.filter_by(email=data[\"email\"]).first()\n        if user and verify_password(user.password, data[\"password\"]):\n            # User has logged successfully\n            # Here we determine the role of the user and set it in the session\n            session[\"user_id\"] = user.id\n            session[\"user_role\"] = user.role\n            return {\"message\": \"User logged in successfully\", \"role\": user.role}",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "LogoutResource",
+        "kind": 6,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "class LogoutResource(Resource):\n    def post(self):\n        if \"user_id\" in session:\n            session.pop(\"user_id\", None)\n            session.pop(\"user_role\", None)\n        return {\"message\": \"User logged out\"}\napi.add_resource(LoginResource, \"/login\")\napi.add_resource(LogoutResource, \"/logout\")\n# Resources to the API\napi.add_resource(UserListResource, \"/users\")",
         "detail": "app.routes.users_bp",
         "documentation": {}
     },
@@ -310,7 +882,7 @@
         "kind": 5,
         "importPath": "app.routes.users_bp",
         "description": "app.routes.users_bp",
-        "peekOfCode": "users_bp = Blueprint(\"users_bp\", __name__)\napi = Api(users_bp)\nclass DonorRegistration(Resource)\n@users_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "peekOfCode": "users_bp = Blueprint(\"users_bp\", __name__)\napi = Api(users_bp)\n# Schema for serialization\nclass UserSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = User\nuser_schema = UserSchema()\nusers_schema = UserSchema(many=True)\n# User resource for getting a single user\nclass UserResource(Resource):",
         "detail": "app.routes.users_bp",
         "documentation": {}
     },
@@ -319,8 +891,44 @@
         "kind": 5,
         "importPath": "app.routes.users_bp",
         "description": "app.routes.users_bp",
-        "peekOfCode": "api = Api(users_bp)\nclass DonorRegistration(Resource)\n@users_bp.route(\"/users\")\ndef get_users():\n    users = [user for user in User.query.all()]",
+        "peekOfCode": "api = Api(users_bp)\n# Schema for serialization\nclass UserSchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = User\nuser_schema = UserSchema()\nusers_schema = UserSchema(many=True)\n# User resource for getting a single user\nclass UserResource(Resource):\n    def get(self, user_id):",
         "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "user_schema",
+        "kind": 5,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "user_schema = UserSchema()\nusers_schema = UserSchema(many=True)\n# User resource for getting a single user\nclass UserResource(Resource):\n    def get(self, user_id):\n        user = User.query.get(user_id)\n        if not user:\n            return {\"message\": \"User not found\"}, 404\n        result = user_schema.dump(user)\n        return result",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "users_schema",
+        "kind": 5,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "users_schema = UserSchema(many=True)\n# User resource for getting a single user\nclass UserResource(Resource):\n    def get(self, user_id):\n        user = User.query.get(user_id)\n        if not user:\n            return {\"message\": \"User not found\"}, 404\n        result = user_schema.dump(user)\n        return result\n    def put(self, user_id):",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "login_manager",
+        "kind": 5,
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "peekOfCode": "login_manager = LoginManager()\nbcrypt = Bcrypt()\ndb = SQLAlchemy()\nmigrate = Migrate(app)\nma = Marshmallow()",
+        "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 5,
+        "importPath": "app.extensions",
+        "description": "app.extensions",
+        "peekOfCode": "bcrypt = Bcrypt()\ndb = SQLAlchemy()\nmigrate = Migrate(app)\nma = Marshmallow()",
+        "detail": "app.extensions",
         "documentation": {}
     },
     {
@@ -348,6 +956,15 @@
         "description": "app.extensions",
         "peekOfCode": "ma = Marshmallow()",
         "detail": "app.extensions",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "kind": 2,
+        "importPath": "app.utilities",
+        "description": "app.utilities",
+        "peekOfCode": "def verify_password(stored_password, provided_password):\n    return bcrypt.check_password_hash(stored_password, provided_password)",
+        "detail": "app.utilities",
         "documentation": {}
     }
 ]

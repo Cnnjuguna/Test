@@ -1,6 +1,10 @@
 from flask import Flask
 
 from .extensions import db, migrate
+from .extensions import login_manager, bcrypt
+
+login_manager.init_app(app)
+bcrypt.init_app(app)
 
 
 def create_app():
