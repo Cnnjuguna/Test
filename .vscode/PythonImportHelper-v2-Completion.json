@@ -305,6 +305,14 @@
         "documentation": {}
     },
     {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "wraps",
         "importPath": "functools",
         "description": "functools",
@@ -873,7 +881,16 @@
         "kind": 6,
         "importPath": "app.routes.users_bp",
         "description": "app.routes.users_bp",
-        "peekOfCode": "class LogoutResource(Resource):\n    def post(self):\n        if \"user_id\" in session:\n            session.pop(\"user_id\", None)\n            session.pop(\"user_role\", None)\n        return {\"message\": \"User logged out\"}\napi.add_resource(LoginResource, \"/login\")\napi.add_resource(LogoutResource, \"/logout\")\n# Resources to the API\napi.add_resource(UserListResource, \"/users\")",
+        "peekOfCode": "class LogoutResource(Resource):\n    def post(self):\n        if \"user_id\" in session:\n            session.pop(\"user_id\", None)\n            session.pop(\"user_role\", None)\n        return {\"message\": \"User logged out\"}\n@users_bp.route(\"/signup\", methods=[\"POST\"])\ndef signup():\n    data = request.get_json()\n    username = data.get(\"username\")",
+        "detail": "app.routes.users_bp",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "app.routes.users_bp",
+        "description": "app.routes.users_bp",
+        "peekOfCode": "def signup():\n    data = request.get_json()\n    username = data.get(\"username\")\n    email = data.get(\"email\")\n    password = data.get(\"password\")\n    # Validating the data (checking for uniqueness)\n    existing_user = User.query.filter_by(username=username).first()\n    if existing_user:\n        return jsonify({\"message\": \"Username is already taken\"}), 400\n    existing_email = User.query.filter_by(email=email).first()",
         "detail": "app.routes.users_bp",
         "documentation": {}
     },

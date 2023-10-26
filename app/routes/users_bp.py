@@ -1,5 +1,15 @@
 import flask_sqlalchemy
-from ..extensions import db, Blueprint, request, Resource, Api, ma, bcrypt, session
+from ..extensions import (
+    db,
+    Blueprint,
+    request,
+    Resource,
+    Api,
+    ma,
+    bcrypt,
+    session,
+    jsonify,
+)
 from ..models.users import User
 from ..utilities import verify_password
 
@@ -92,6 +102,37 @@ class LogoutResource(Resource):
             session.pop("user_id", None)
             session.pop("user_role", None)
         return {"message": "User logged out"}
+
+
+@users_bp.route("/signup", methods=["POST"])
+def signup():
+    data = request.get_json()
+    username = data.get("username")
+    email = data.get("email")
+    password = data.get("password")
+
+    # Validating the data (checking for uniqueness)
+    existing_user = User.query.filter_by(username=username).first()
+    if existing_user:
+        return jsonify({"message": "Username is already taken"}), 400
+
+    existing_email = User.query.filter_by(email=email).first()
+    if existing_email:
+        return jsonify({"message": "Email is already registered"}), 400
+
+    # Hashing the password
+    hashed_password = bcrypt.generate_password_hash(password).decode("utf-8")
+
+    # Creating a new user
+    new_user = User(
+        username=username, email=email, password=hashed_password, role="donor"
+    )
+
+    # Add the user to the database
+    db.session.add(new_user)
+    db.session.commit()
+
+    return jsonify({"message": "User successfully registered"}), 201
 
 
 api.add_resource(LoginResource, "/login")
