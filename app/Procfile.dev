@@ -1,0 +1,2 @@
+web: run.py
+celery_worker: celery -A your_flask_app.tasks:app worker --loglevel=info

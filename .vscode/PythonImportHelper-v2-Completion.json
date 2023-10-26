@@ -160,6 +160,30 @@
         "documentation": {}
     },
     {
+        "label": "create_app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "flask_sqlalchemy",
         "kind": 6,
         "isExtraImport": true,
@@ -225,6 +249,88 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "secrets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "secrets",
+        "description": "secrets",
+        "detail": "secrets",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "update_next_donation_dates",
+        "importPath": "tasks",
+        "description": "tasks",
+        "isExtraImport": true,
+        "detail": "tasks",
+        "documentation": {}
+    },
+    {
+        "label": "update_next_donation_dates",
+        "importPath": "tasks",
+        "description": "tasks",
+        "isExtraImport": true,
+        "detail": "tasks",
+        "documentation": {}
+    },
+    {
         "label": "Migrate",
         "importPath": "flask_migrate",
         "description": "flask_migrate",
@@ -281,38 +387,6 @@
         "documentation": {}
     },
     {
-        "label": "g",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "session",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "jsonify",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
         "label": "wraps",
         "importPath": "functools",
         "description": "functools",
@@ -334,6 +408,56 @@
         "description": "flask_bcrypt",
         "isExtraImport": true,
         "detail": "flask_bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "scheduler",
+        "importPath": "scheduler",
+        "description": "scheduler",
+        "isExtraImport": true,
+        "detail": "scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "sched",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sched",
+        "description": "sched",
+        "detail": "sched",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -386,7 +510,7 @@
         "kind": 6,
         "importPath": "app.models.donors",
         "description": "app.models.donors",
-        "peekOfCode": "class Donor(db.Model):\n    __tablename__ = \"donors\"\n    donor_id = db.Column(db.Integer, primary_key=True)\n    user_id = db.Column(db.Integer, db.ForeignKey(\"users.id\"), nullable=False)\n    name = db.Column(db.String(100), nullable=False)\n    donations = db.Column(db.Integer, default=0)\n    address = db.Column(db.String(255))\n    total_donation_amount = db.Column(db.Integer, default=0)\n    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())\n    updated_at = db.Column(",
+        "peekOfCode": "class Donor(db.Model):\n    __tablename__ = \"donors\"\n    donor_id = db.Column(db.Integer, primary_key=True)\n    user_id = db.Column(db.Integer, db.ForeignKey(\"users.id\"), nullable=False)\n    name = db.Column(db.String(100), nullable=False)\n    donations = db.Column(db.Integer, default=0)\n    address = db.Column(db.String(255))\n    total_donation_amount = db.Column(db.Integer, default=0)\n    donation_frequency = db.Column(db.String(20), nullable=False)\n    recurring = db.Column(db.Boolean, default=False)",
         "detail": "app.models.donors",
         "documentation": {}
     },
@@ -692,7 +816,7 @@
         "kind": 6,
         "importPath": "app.routes.donations_bp",
         "description": "app.routes.donations_bp",
-        "peekOfCode": "class DonationListResource(Resource):\n    def get(self):\n        donations = Donation.query.all()\n        result = donations_schema.dump(donations)\n        return result\n    def post(self):\n        data = request.get_json()\n        donation = donation_schema.load(data)\n        db.session.add(donation)\n        db.session.commit()",
+        "peekOfCode": "class DonationListResource(Resource):\n    def get(self):\n        donations = Donation.query.all()\n        result = donations_schema.dump(donations)\n        return result\n    def post(self):\n        data = request.get_json()\n        # We check if the donation is recurring\n        is_recurring = data.get(\"recurring\", False)\n        if is_recurring:",
         "detail": "app.routes.donations_bp",
         "documentation": {}
     },
@@ -827,7 +951,7 @@
         "kind": 5,
         "importPath": "app.routes.stories_bp",
         "description": "app.routes.stories_bp",
-        "peekOfCode": "stories_bp = Blueprint(\"stories_bp\", __name__)\napi = Api(stories_bp)\n# schema for Story serialization\nclass StorySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Story\n# Story resource for getting a single story\nclass StoryResource(Resource):\n    def get(self, story_id):\n        story = Story.query.get(story_id)",
+        "peekOfCode": "stories_bp = Blueprint(\"stories\", __name__)\napi = Api(stories_bp)\n# schema for Story serialization\nclass StorySchema(ma.SQLAlchemyAutoSchema):\n    class Meta:\n        model = Story\n# Story resource for getting a single story\nclass StoryResource(Resource):\n    def get(self, story_id):\n        story = Story.query.get(story_id)",
         "detail": "app.routes.stories_bp",
         "documentation": {}
     },
@@ -931,6 +1055,24 @@
         "documentation": {}
     },
     {
+        "label": "generate_secret_key",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def generate_secret_key():\n    secret_key = os.getenv(\"SECRET_KEY\")\n    if secret_key is None:\n        secret_key = secrets.token_hex(32)\n        os.environ[\"SECRET_KEY\"] = secret_key  # Set the environment variable\n        write_secret_key_to_env(secret_key)  # Writes  to .env\n    return secret_key\ndef create_app():\n    app = Flask(__name__)\n    app.config[\"SQLALCHEMY_DATABASE_URI\"] = os.getenv(\"DATABASE_URL\")",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def create_app():\n    app = Flask(__name__)\n    app.config[\"SQLALCHEMY_DATABASE_URI\"] = os.getenv(\"DATABASE_URL\")\n    app.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\n    app.config[\"SECRET_KEY\"] = os.getenv(\"SECRET_KEY\")\n    db.init_app(app)\n    migrate.init_app(app, db)\n    login_manager.init_app(app)\n    bcrypt.init_app(app)\n    from .routes.admin_bp import admin_bp",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
         "label": "login_manager",
         "kind": 5,
         "importPath": "app.extensions",
@@ -976,11 +1118,65 @@
         "documentation": {}
     },
     {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.run",
+        "description": "app.run",
+        "peekOfCode": "app = create_app()\nif __name__ == \"__main__\":\n    # Starting the scheduler\n    scheduler.run()  # We run scheduler in the same process\n    app.run(debug=True)",
+        "detail": "app.run",
+        "documentation": {}
+    },
+    {
+        "label": "schedule_periodic_task",
+        "kind": 2,
+        "importPath": "app.scheduler",
+        "description": "app.scheduler",
+        "peekOfCode": "def schedule_periodic_task(sc):\n    update_next_donation_dates()\n    sc.enter(\n        86400, 1, schedule_periodic_task, (sc,)\n    )  # Scheduling the task to run daily (86400 seconds)\n# Scheduling the first run of the task\nscheduler.enter(0, 1, schedule_periodic_task, (scheduler,))\nscheduler.run()",
+        "detail": "app.scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "scheduler",
+        "kind": 5,
+        "importPath": "app.scheduler",
+        "description": "app.scheduler",
+        "peekOfCode": "scheduler = sched.scheduler(time.time, time.sleep)\n# Defining the periodic task\ndef schedule_periodic_task(sc):\n    update_next_donation_dates()\n    sc.enter(\n        86400, 1, schedule_periodic_task, (sc,)\n    )  # Scheduling the task to run daily (86400 seconds)\n# Scheduling the first run of the task\nscheduler.enter(0, 1, schedule_periodic_task, (scheduler,))\nscheduler.run()",
+        "detail": "app.scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.seed",
+        "description": "app.seed",
+        "peekOfCode": "app = create_app()\n# Initialize the database\nwith app.app_context():\n    db.create_all()\n    # Create a sample admin\n    admin = Admin(user_id=1)\n    db.session.add(admin)\n    # Create sample users (charity, donor, and admin)\n    charity_user = User(\n        username=\"charity_user\",",
+        "detail": "app.seed",
+        "documentation": {}
+    },
+    {
+        "label": "update_next_donation_dates",
+        "kind": 2,
+        "importPath": "app.tasks",
+        "description": "app.tasks",
+        "peekOfCode": "def update_next_donation_dates():\n    recurring_donations = Donation.query.filter(Donation.is_recurring.is_(True)).all()\n    for donation in recurring_donations:\n        if donation.frequency == \"monthly\":\n            donation.next_donation_date += timedelta(days=30)\n        elif donation.frequency == \"quarterly\":\n            donation.next_donation_date += timedelta(days=90)\n    db.session.commit()",
+        "detail": "app.tasks",
+        "documentation": {}
+    },
+    {
         "label": "verify_password",
         "kind": 2,
         "importPath": "app.utilities",
         "description": "app.utilities",
-        "peekOfCode": "def verify_password(stored_password, provided_password):\n    return bcrypt.check_password_hash(stored_password, provided_password)",
+        "peekOfCode": "def verify_password(stored_password, provided_password):\n    return bcrypt.check_password_hash(stored_password, provided_password)\n# utilities.py\nimport os\ndef write_secret_key_to_env(secret_key):\n    env_file = \".env\"\n    if not os.path.exists(env_file):\n        # If the .env file doesn't exist, we create it\n        with open(env_file, \"w\") as f:\n            f.write(f\"SECRET_KEY={secret_key}\\n\")",
+        "detail": "app.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "write_secret_key_to_env",
+        "kind": 2,
+        "importPath": "app.utilities",
+        "description": "app.utilities",
+        "peekOfCode": "def write_secret_key_to_env(secret_key):\n    env_file = \".env\"\n    if not os.path.exists(env_file):\n        # If the .env file doesn't exist, we create it\n        with open(env_file, \"w\") as f:\n            f.write(f\"SECRET_KEY={secret_key}\\n\")\n    else:\n        # If the .env file already exists, check if SECRET_KEY is defined\n        with open(env_file, \"r\") as f:\n            lines = f.readlines()",
         "detail": "app.utilities",
         "documentation": {}
     }

@@ -10,6 +10,11 @@ flask-marshmallow = "*"
 flask-restful = "*"
 flask-login = "*"
 flask-bcrypt = "*"
+python-dotenv = "*"
+celery = {extras = ["redis"], version = "*"}
+honcho = "*"
+gunicorn = "*"
+werkzeug = "*"
 
 [dev-packages]
 

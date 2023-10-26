@@ -1,7 +1,7 @@
 from ..extensions import db, ma, Resource, Api, Blueprint, request
 from models.stories import Story
 
-stories_bp = Blueprint("stories_bp", __name__)
+stories_bp = Blueprint("stories", __name__)
 api = Api(stories_bp)
 
 

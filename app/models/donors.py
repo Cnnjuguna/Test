@@ -9,6 +9,10 @@ class Donor(db.Model):
     donations = db.Column(db.Integer, default=0)
     address = db.Column(db.String(255))
     total_donation_amount = db.Column(db.Integer, default=0)
+    donation_frequency = db.Column(db.String(20), nullable=False)
+    recurring = db.Column(db.Boolean, default=False)
+    initial_donation_date = db.Column(db.DateTime, nullable=True)
+    next_donation_date = db.Column(db.DateTime, nullable=True)
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(
         db.DateTime,

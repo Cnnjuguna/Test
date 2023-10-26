@@ -54,10 +54,38 @@ class DonationListResource(Resource):
 
     def post(self):
         data = request.get_json()
-        donation = donation_schema.load(data)
+
+        # We check if the donation is recurring
+        is_recurring = data.get("recurring", False)
+
+        if is_recurring:
+            # Handling recurring donation creation
+            donation = self.create_recurring_donation(data)
+        else:
+            # Handling one-time donation creation
+            donation = donation_schema.load(data)
+
         db.session.add(donation)
         db.session.commit()
         return donation_schema.dump(donation), 201
+
+    def create_recurring_donation(self, data):
+        # Creates a new recurring Donation record
+        donation = donation_schema.load(data)
+        db.session.add(donation)
+        db.session.commit()
+
+        # Handling scheduling for recurring donations (explained below)
+        self.schedule_recurring_donation_processing(donation)
+
+        return donation
+
+    def schedule_recurring_donation_processing(self, donation):
+        if donation.recurring:
+            # Scheduling the recurring donation processing task using Celery (explained earlier)
+            update_next_donation_dates.apply_async(
+                args=[donation.donation_id], eta=donation.next_donation_date
+            )
 
 
 # Adding resources to the API
